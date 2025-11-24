@@ -1,0 +1,705 @@
+cwe_mappings:
+  CWE-79:  # Improper Neutralization of Input During Web Page Generation (‘Cross-Site Scripting’)
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1189  # Drive-by Compromise
+      - T1566  # Phishing
+      - T1059  # Command and Scripting Interpreter
+      - T1539  # Steal Web Session Cookie
+      - T1056  # Input Capture
+      - T1187  # Forced Authentication
+      - T1528  # Steal Application Access Token
+      - T1583  # Acquire Infrastructure
+      - T1584  # Compromise Infrastructure
+      - T1586  # Compromise Accounts
+      - T1595  # Active Scanning
+      
+  CWE-787:  # Out-of-Bounds Write
+    difficulty: 0.9
+    mitre_tactics:
+      - T1203  # Exploitation for Client Execution
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1569  # System Services
+      - T1003  # OS Credential Dumping
+      - T1539  # Steal Web Session Cookie
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1106  # Native API
+      - T1204  # User Execution
+      - T1129  # Shared Modules
+      
+  CWE-89:  # Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1078  # Valid Accounts
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1059  # Command and Scripting Interpreter
+      - T1111  # Multi-Factor Authentication Interception
+      - T1552  # Unsecured Credentials
+      - T1585  # Establish Accounts
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1595  # Active Scanning
+      - T1649  # Steal or Forge Authentication Certificates
+
+  CWE-352:  # Cross-Site Request Forgery (CSRF)
+    difficulty: 0.4
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1566  # Phishing
+      - T1539  # Steal Web Session Cookie
+      - T1528  # Steal Application Access Token
+      - T1204  # User Execution
+      - T1199  # Trusted Relationship
+      - T1595  # Active Scanning
+
+  CWE-22:  # Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+    difficulty: 0.4
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1552  # Unsecured Credentials
+      - T1133  # External Remote Services
+      - T1555  # Credentials from Password Stores
+      - T1594  # Search Victim-Owned Websites
+      - T1669  # Wi-Fi Networks
+
+  CWE-125:  # Out-of-bounds Read
+    difficulty: 0.8
+    mitre_tactics:
+      - T1203  # Exploitation for Client Execution
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1569  # System Services
+      - T1003  # OS Credential Dumping
+      - T1539  # Steal Web Session Cookie
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1106  # Native API
+      - T1204  # User Execution
+      - T1129  # Shared Modules
+
+  CWE-78:  # Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+    difficulty: 0.6
+    mitre_tactics:
+      - T1059  # Command and Scripting Interpreter
+      - T1190  # Exploit Public-Facing Application
+      - T1203  # Exploitation for Client Execution
+      - T1106  # Native API
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1569  # System Services
+      - T1585  # Establish Accounts
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1609  # Container Administration Command
+      - T1651  # Cloud Administration Command
+
+  CWE-416:  # Use After Free
+    difficulty: 0.9
+    mitre_tactics:
+      - T1203  # Exploitation for Client Execution
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1106  # Native API
+      - T1569  # System Services
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+
+  CWE-862:  # Missing Authorization
+    difficulty: 0.2
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1072  # Software Deployment Tools
+      - T1047  # Windows Management Instrumentation
+      - T1190  # Exploit Public-Facing Application
+      - T1595  # Active Scanning
+      - T1133  # External Remote Services
+      - T1212  # Exploitation for Credential Access
+      - T1669  # Wi-Fi Networks
+      - T1594  # Search Victim-Owned Websites
+      - T1558  # Steal or Forge Kerberos Tickets
+
+  CWE-434:  # Unrestricted Upload of File with Dangerous Type
+    difficulty: 0.5
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1203  # Exploitation for Client Execution
+      - T1566  # Phishing
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1106  # Native API
+      - T1189  # Drive-by Compromise
+      - T1195  # Supply Chain Compromise
+      - T1199  # Trusted Relationship
+      - T1204  # User Execution
+      - T1608  # Stage Capabilities
+
+  CWE-94:  # Improper Control of Generation of Code ('Code Injection')
+    difficulty: 0.4
+    mitre_tactics:
+      - T1059  # Command and Scripting Interpreter
+      - T1129  # Shared Modules
+      - T1203  # Exploitation for Client Execution
+      - T1659  # Content Injection
+      - T1674  # Input Injection
+      - T1106  # Native API
+      - T1190  # Exploit Public-Facing Application
+      - T1566  # Phishing
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+
+  CWE-20:  # Improper Input Validation
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1566  # Phishing
+      - T1203  # Exploitation for Client Execution
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+
+  CWE-77:  # Improper Neutralization of Special Elements used in a Command ('Command Injection')
+    difficulty: 0.4
+    mitre_tactics:
+      - T1059  # Command and Scripting Interpreter
+      - T1190  # Exploit Public-Facing Application
+      - T1203  # Exploitation for Client Execution
+      - T1106  # Native API
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1595  # Active Scanning
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+      - T1559  # Inter-Process Communication
+      
+  CWE-287:  # Improper Authentication
+    difficulty: 0.4
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1110  # Brute Force
+      - T1111  # Multi-Factor Authentication Interception
+      - T1133  # External Remote Services
+      - T1621  # Multi-Factor Authentication Request Generation
+      - T1556  # Modify Authentication Process
+      - T1190  # Exploit Public-Facing Application
+      - T1111  # Multi-Factor Authentication Interception
+      - T1040  # Network Sniffing
+      - T1558  # Steal or Forge Kerberos Tickets
+
+  CWE-269:  # Improper Privilege Management
+    difficulty: 0.7
+    mitre_tactics:
+      - T1047  # Windows Management Instrumentation
+      - T1053  # Scheduled Task/Job
+      - T1056  # Input Capture
+      - T1106  # Native API
+      - T1078  # Valid Accounts
+      - T1569  # System Services
+      - T1675  # ESXi Administration Command
+      - T1649  # Steal or Forge Authentication Certificates
+      - T1651  # Cloud Administration Command
+      - T1609  # Container Administration Command
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+
+  CWE-502:  # Deserialization of Untrusted Data
+    difficulty: 0.7
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1203  # Exploitation for Client Execution
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+
+  CWE-200:  # Exposure of Sensitive Information to an Unauthorized Actor
+    difficulty: 0.4
+    mitre_tactics:
+      - T1003  # OS Credential Dumping
+      - T1040  # Network Sniffing
+      - T1111  # Multi-Factor Authentication Interception
+      - T1091  # Replication Through Removable Media
+      - T1106  # Native API
+      - T1592  # Gather Victim Host Information
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1078  # Valid Accounts
+      - T1133  # External Remote Services
+      - T1190  # Exploit Public-Facing Application
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1557  # Adversary-in-the-Middle
+      - T1566  # Phishing
+      - T1586  # Compromise Accounts
+      - T1598  # Phishing for Information
+      - T1650  # Acquire Access
+      - T1669  # Wi-Fi Networks
+      
+  CWE-863:  # Incorrect Authorization
+    difficulty: 0.5
+    mitre_tactics:
+      - T1047  # Windows Management Instrumentation
+      - T1053  # Scheduled Task/Job
+      - T1106  # Native API
+      - T1078  # Valid Accounts
+      - T1190  # Exploit Public-Facing Application
+      - T1133  # External Remote Services
+      - T1556  # Modify Authentication Process
+      - T1651  # Cloud Administration Command
+      - T1675  # ESXi Administration Command
+      - T1609  # Container Administration Command
+      - T1110  # Brute Force
+      - T1187  # Forced Authentication
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1557  # Adversary-in-the-Middle
+      - T1586  # Compromise Accounts
+
+  CWE-918:  # Server-Side Request Forgery (SSRF)
+    difficulty: 0.5
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1595  # Active Scanning
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1212  # Exploitation for Credential Access
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1593  # Search Open Websites/Domains
+      - T1594  # Search Victim-Owned Websites
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1566  # Phishing
+      - T1586  # Compromise Accounts
+      - T1648  # Serverless Execution
+      - T1199  # Trusted Relationship
+
+  CWE-119:  # Improper Restriction of Operations within the Bounds of a Memory Buffer
+    difficulty: 0.8
+    mitre_tactics:
+      - T1203  # Exploitation for Client Execution
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1569  # System Services
+      - T1003  # OS Credential Dumping
+      - T1539  # Steal Web Session Cookie
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1106  # Native API
+      - T1204  # User Execution
+      - T1129  # Shared Modules
+
+  CWE-476:  # NULL Pointer Dereference
+    difficulty: 0.5
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1203  # Exploitation for Client Execution
+      - T1106  # Native API
+      - T1595  # Active Scanning
+
+  CWE-798:  # Use of Hard-coded Credentials
+    difficulty: 0.2
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1190  # Exploit Public-Facing Application
+      - T1595  # Active Scanning
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1650  # Acquire Access
+      - T1555  # Credentials from Password Stores
+      - T1556  # Modify Authentication Process
+      - T1040  # Network Sniffing
+      - T1593  # Search Open Websites/Domains
+      - T1594  # Search Victim-Owned Websites
+
+  CWE-190:  # Integer Overflow or Wraparound
+    difficulty: 0.8
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1203  # Exploitation for Client Execution
+      - T1059  # Command and Scripting Interpreter 
+      - T1559  # Inter-Process Communication
+      - T1569  # System Services
+      - T1592  # Gather Victim Host Information
+      - T1106  # Native API
+
+  CWE-400:  # Uncontrolled Resource Consumption ('Resource Exhaustion')
+    difficulty: 0.2
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1053  # Scheduled Task/Job
+      - T1569  # System Services
+      - T1648  # Serverless Execution
+      - T1595  # Active Scanning
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1133  # External Remote Services
+      - T1091  # Replication Through Removable Media
+      - T1621  # Multi-Factor Authentication Request Generation
+
+  CWE-306:  # Missing Authentication for Critical Function
+    difficulty: 0.1
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1053  # Scheduled Task/Job
+      - T1569  # System Services
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1593  # Search Open Websites/Domains
+      - T1594  # Search Victim-Owned Websites
+      - T1072  # Software Deployment Tools
+      - T1047  # Windows Management Instrumentation
+      - T1190  # Exploit Public-Facing Application
+      - T1595  # Active Scanning
+      - T1133  # External Remote Services
+      - T1212  # Exploitation for Credential Access
+      - T1669  # Wi-Fi Networks
+      - T1594  # Search Victim-Owned Websites
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1675  # ESXi Administration Command
+      - T1651  # Cloud Administration Command
+      - T1649  # Steal or Forge Authentication Certificates
+      - T1648  # Serverless Execution
+      - T1609  # Container Administration Command
+      - T1610  # Deploy Container
+      - T1606  # Forge Web Credentials
+      - T1584  # Compromise Infrastructure
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1199  # Trusted Relationship
+      - T1195  # Supply Chain Compromise
+      - T1003  # OS Credential Dumping
+      - T1674  # Input Injection
+
+owasp_mappings:
+  A01:2021:  # Broken Access Control
+    difficulty: 0.2
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1190  # Exploit Public-Facing Application
+      - T1212  # Exploitation for Credential Access
+      - T1552  # Unsecured Credentials
+      - T1133  # External Remote Services
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1072  # Software Deployment Tools
+      - T1091  # Replication Through Removable Media
+      - T1200  # Hardware Additions
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1555  # Credentials from Password Stores
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1606  # Forge Web Credentials
+      - T1609  # Container Administration Command
+      - T1651  # Cloud Administration Command
+      - T1675  # ESXi Administration Command
+      - T1669  # Wi-Fi Networks
+      - T1674  # Input Injection
+      - T1586  # Compromise Accounts
+
+  A02:2021:  # Cryptographic Failures
+    difficulty: 0.6
+    mitre_tactics:
+      - T1040  # Network Sniffing
+      - T1110  # Brute Force
+      - T1669  # Wi-Fi Networks
+      - T1552  # Unsecured Credentials
+      - T1200  # Hardware Additions
+      - T1555  # Credentials from Password Stores
+      - T1078  # Valid Accounts
+      - T1190  # Exploit Public-Facing Application
+      - T1111  # Multi-Factor Authentication Interception
+      - T1003  # OS Credential Dumping
+      - T1606  # Forge Web Credentials
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1557  # Adversary-in-the-Middle
+      - T1595  # Active Scanning
+      - T1648  # Serverless Execution
+      - T1649  # Steal or Forge Authentication Certificates
+      - T1659  # Content Injection
+      
+  A03:2021:  # Injection
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1212  # Exploitation for Credential Access
+      - T1059  # Command and Scripting Interpreter
+      - T1212  # Exploitation for Credential Access
+      - T1659  # Content Injection
+      - T1110  # Brute Force
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1585  # Establish Accounts
+      - T1586  # Compromise Accounts
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1606  # Forge Web Credentials
+      - T1648  # Serverless Execution
+
+  A04:2021:  # Insecure Design
+    difficulty: 0.6
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1078  # Valid Accounts
+      - T1659  # Content Injection
+      - T1674  # Input Injection
+      - T1212  # Exploitation for Credential Access
+      - T1566  # Phishing
+      - T1598  # Phishing for Information
+      - T1072  # Software Deployment Tools
+      - T1111  # Multi-Factor Authentication Interception
+      - T1204  # User Execution
+      - T1056  # Input Capture
+      - T1669  # Wi-Fi Networks
+      - T1650  # Acquire Access
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1091  # Replication Through Removable Media
+      - T1110  # Brute Force
+      - T1111  # Multi-Factor Authentication Interception
+      - T1133  # External Remote Services
+      - T1195  # Supply Chain Compromise
+      - T1199  # Trusted Relationship
+      - T1200  # Hardware Additions
+      - T1204  # User Execution
+      - T1586  # Compromise Accounts
+
+  A05:2021:  # Security Misconfiguration
+    difficulty: 0.2
+    mitre_tactics:
+      - T1078  # Valid Accounts 
+      - T1190  # Exploit Public-Facing Application
+      - T1133  # External Remote Services
+      - T1552  # Unsecured Credentials
+      - T1650  # Acquire Access
+      - T1091  # Replication Through Removable Media
+      - T1110  # Brute Force
+      - T1195  # Supply Chain Compromise
+      - T1199  # Trusted Relationship
+      - T1204  # User Execution
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1556  # Modify Authentication Process
+      - T1003  # OS Credential Dumping
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1584  # Compromise Infrastructure
+      - T1566  # Phishing
+      - T1598  # Phishing for Information
+      - T1621  # Multi-Factor Authentication Request Generation
+
+  A06:2021:  # Vulnerable and Outdated Components
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1203  # Exploitation for Client Execution
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1569  # System Services
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1593  # Search Open Websites/Domains
+      - T1594  # Search Victim-Owned Websites
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1595  # Active Scanning
+      - T1189  # Drive-by Compromise
+      - T1583  # Acquire Infrastructure
+      - T1003  # OS Credential Dumping
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1598  # Phishing for Information
+
+  A07:2021:  # Identification and Authentication Failures
+    difficulty: 0.1
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1110  # Brute Force
+      - T1556  # Modify Authentication Process
+      - T1539  # Steal Web Session Cookie
+      - T1111  # Multi-Factor Authentication Interception
+      - T1110  # Brute Force
+      - T1621  # Multi-Factor Authentication Request Generation
+      - T1133  # External Remote Services
+      - T1589  # Gather Victim Identity Information
+      - T1594  # Search Victim-Owned Websites
+      - T1595  # Active Scanning
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1598  # Phishing for Information
+      - T1650  # Acquire Access
+
+  A08:2021:  # Software and Data Integrity Failures
+    difficulty: 0.8
+    mitre_tactics:
+      - T1195  # Supply Chain Compromise
+      - T1608  # Stage Capabilities
+      - T1047  # Windows Management Instrumentation (WMI)
+      - T1072  # Software Deployment Tools
+      - T1091  # Replication Through Removable Media
+      - T1203  # Exploitation for Client Execution
+      - T1204  # User Execution
+      - T1610  # Deploy Container
+      - T1557  # Adversary-in-the-Middle
+      - T1559  # Inter-Process Communication      
+      - T1569  # System Services
+      - T1583  # Acquire Infrastructure
+      - T1584  # Compromise Infrastructure
+      - T1587  # Develop Capabilities
+      - T1588  # Obtain Capabilities
+      - T1648  # Serverless Execution
+      - T1649  # Steal or Forge Authentication Certificates
+      - T1674  # Input Injection
+      - T1659  # Content Injection
+
+  A09:2021:  # Security Logging and Monitoring Failures
+    difficulty: 0.1
+    mitre_tactics:
+      - T1003  # OS Credential Dumping
+      - T1047  # Windows Management Instrumentation (WMI)
+      - T1053  # Scheduled Task/Job
+      - T1059  # Command and Scripting Interpreter
+      - T1072  # Software Deployment Tools
+      - T1078  # Valid Accounts
+      - T1091  # Replication Through Removable Media
+      - T1106  # Native API
+      - T1110  # Brute Force
+      - T1133  # External Remote Services
+      - T1189  # Drive-by Compromise
+      - T1190  # Exploit Public-Facing Application
+      - T1195  # Supply Chain Compromise
+      - T1199  # Trusted Relationship
+      - T1200  # Hardware Additions
+      - T1203  # Exploitation for Client Execution
+      - T1204  # User Execution
+      - T1212  # Exploitation for Credential Access
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1552  # Unsecured Credentials
+      - T1555  # Credentials from Password Stores
+      - T1556  # Modify Authentication Process
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1559  # Inter-Process Communication
+      - T1566  # Phishing
+      - T1569  # System Services
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1595  # Active Scanning
+      - T1598  # Phishing for Information
+      - T1606  # Forge Web Credentials
+      - T1609  # Container Administration Command
+      - T1610  # Deploy Container
+      - T1621  # Multi-Factor Authentication Request Generation
+      - T1648  # Serverless Execution
+      - T1649  # Steal or Forge Authentication Certificates
+      - T1650  # Acquire Access
+      - T1651  # Cloud Administration Command
+      - T1659  # Content Injection
+      - T1669  # Wi-Fi Networks
+      - T1674  # Input Injection
+      - T1675  # ESXi Administration Command
+      
+  A10:2021:  # Server-Side Request Forgery (SSRF)
+    difficulty: 0.5
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1595  # Active Scanning
+      - T1589  # Gather Victim Identity Information
+      - T1590  # Gather Victim Network Information
+      - T1591  # Gather Victim Org Information
+      - T1592  # Gather Victim Host Information
+      - T1212  # Exploitation for Credential Access
+      - T1596  # Search Open Sources
+      - T1597  # Search Closed Sources
+      - T1593  # Search Open Websites/Domains
+      - T1594  # Search Victim-Owned Websites
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1528  # Steal Application Access Token
+      - T1539  # Steal Web Session Cookie
+      - T1566  # Phishing
+      - T1586  # Compromise Accounts
+      - T1648  # Serverless Execution
+      - T1199  # Trusted Relationship

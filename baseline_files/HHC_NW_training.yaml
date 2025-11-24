@@ -1,0 +1,123 @@
+challenge_mappings:
+  nw8_php_object_injection:  # This involves using a LFI to read sensitive source code and then php object injection to get RCE https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection
+    difficulty: 0.6
+    mitre_tactics:
+      - T1078  # Valid Accounts
+      - T1110  # Brute Force
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+      - T1659  # Content Injection
+      - T1555  # Credentials from Password Stores
+      - T1552  # Unsecured Credentials
+  nw8_template_injection: #This challenge leverages an LFI with bab filtering/input validation and then exploits an SSTI (template injection) vulnerability
+    difficulty: 0.4
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1552  # Unsecured Credentials
+      - T1059  # Command and Scripting Interpreter
+      - T1659  # Content Injection
+      - T1078  # Valid Accounts
+  nw8_dig: #Using DIG to find valuable information
+    difficulty: 0.3
+    mitre_tactics:
+      - T1592  # Gather Victim Host Information
+      - T1590  # Gather Victim Network Information
+  nw5_buffer_overflow:
+    difficulty: 0.7
+    mitre_tactics:
+      - T1659  # Content Injection
+      - T1190  # Exploit Public-Facing Application
+      - T1059  # Command and Scripting Interpreter
+  nw_webexec:
+    difficulty: 0.4
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1590  # Gather Victim Network Information
+      - T1595  # Active Scanning
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1059  # Command and Scripting Interpreter
+  linux_privesc:
+    difficulty: 0.2
+    mitre_tactics:
+      - T1659  # Content Injection
+      - T1059  # Command and Scripting Interpreter
+      - T1569  # System Services
+  hashcat:
+    difficulty: 0.4
+    mitre_tactics:
+      - T1110  # Brute Force
+      - T1555  # Credentials from Password Stores
+      - T1558  # Steal or Forge Kerberos Tickets
+      - T1552  # Unsecured Credentials
+  xxe-mirror:
+    difficulty: 0.5
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1059  # Command and Scripting Interpreter
+  wifi_thermostat:
+    difficulty: 0.2
+    mitre_tactics:
+      - T1590  # Gather Victim Network Information
+      - T1552  # Unsecured Credentials
+      - T1059  # Command and Scripting Interpreter
+      - T1669  # Wi-Fi Networks
+  sqli_assist:
+    difficulty: 0.3
+    mitre_tactics:
+      - T1190  # Exploit Public-Facing Application
+      - T1078  # Valid Accounts
+      - T1552  # Unsecured Credentials
+      - T1059  # Command and Scripting Interpreter
+      - T1659  # Content Injection
+  mock_ad_compromise:
+    difficulty: 0.9
+    mitre_tactics:
+    - T1590
+    - T1659
+    - T1190
+    - T1078
+    - T1110
+    - T1557
+    - T1187
+    - T1552
+    - T1558
+  mock_gcloud_git:
+    difficulty: 0.6
+    mitre_tactics:
+    - T1566
+    - T1677
+    - T1651
+    - T1053
+    - T1528
+    - T1552
+  mock_learn_shodan:
+    difficulty: 0.2
+    mitre_tactics:
+    - T1596
+  mock_pcap_cracking:
+    difficulty: 0.2
+    mitre_tactics:
+    - T1557
+    - T1110
+  mock_ransomware:
+    difficulty: 0.5
+    mitre_tactics:
+    - T1195 # Supply Chain Compromise
+    - T1129 # Shared Modules
+    - T1486 # Data Encrypted for Impact
+  mock_windows_privesc:
+    difficulty: 0.3
+    mitre_tactics:
+    - T1037 # Boot or Logon Autostart Execution
+  mock_linux_privilege_escalation:
+    difficulty: 0.4
+    mitre_tactics:
+    - T1595 # Active Scanning
+    - T1597 # Search Closed Sources
+    - T1189 # Drive-by Compromise
+    - T1610 # Deploy Container
+    - T1204 # User Execution
+    - T1187 # Forced Authentication

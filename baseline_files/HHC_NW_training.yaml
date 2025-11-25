@@ -1,5 +1,5 @@
 challenge_mappings:
-  nw8_php_object_injection:  # This involves using a LFI to read sensitive source code and then php object injection to get RCE https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection
+  nw8_php_object_injection:
     difficulty: 0.6
     mitre_tactics:
       - T1078  # Valid Accounts
@@ -9,7 +9,7 @@ challenge_mappings:
       - T1659  # Content Injection
       - T1555  # Credentials from Password Stores
       - T1552  # Unsecured Credentials
-  nw8_template_injection: #This challenge leverages an LFI with bab filtering/input validation and then exploits an SSTI (template injection) vulnerability
+  nw8_template_injection:
     difficulty: 0.4
     mitre_tactics:
       - T1190  # Exploit Public-Facing Application

@@ -1,6 +1,7 @@
 # Thesis Appendix
 
-Appendix scripts for the master thesis "Assessing the Real-World Relevance of Capture-The-Flag (CTF) Challenges Using NICE and MITRE ATT&CK Frameworks"
+Appendix scripts for the master thesis "Assessing the Real-World Relevance of Capture-The-Flag (CTF) Challenges Using NICE and MITRE ATT&CK Frameworks".
+This repository is archived to perserve its state upon publishing the thesis.
 
 ## Overview
 
@@ -196,5 +197,4 @@ Current trained parameters (from `alpha_beta_params.yaml`):
 ## Contributing
 
 This repository contains research code for the master thesis "Assessing the Real-World Relevance of Capture-The-Flag (CTF) Challenges Using NICE and MITRE ATT&CK Frameworks."
-The repository will be archived upon thesis delivery and will not be reciving updates.
 Feel free to fork it.
